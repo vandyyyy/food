@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head></head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>Document
+   <script>
+         let name = prompt("What is your name?");
+         alert("   Welcome to StarBucks!!!!! I&#39;m your starbucks assistant and\
+nI will help you create your weekly starbusks coffee schedule");
+         alert("To start we need to know what your coffee preferences are for each day of the week.Let&#39;s start with!");
+         let arr=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday",
+"Saturday"];
+         let arr2=[" "," "," "," "," "," "];
+         let arr3=[" "," "," "," "," "," "];
+
+         
+         for( let i=0;i<arr.length;i++)
+         {
+            var cof=parseInt(prompt(`${arr[i]} : Would you prefer a Cappuccino
+, or a Frappuccino, or a Latte&#39;.\nEnter\n1. For Cappuccino\n2. For Frappuccino
+\n3. For Latte\&#39; `));
+            if(cof== 1)
+         {
+             arr2[i]="Cappuccino";
+             size=parseInt(prompt("What size coffee would you like?\nPlease select\n1. For a Tail\n2. For a Grande\n3. For a Venti"));
+             if(size==1);
+             {
+                 arr3[i]="Tail";
+             }
+             if(size==2)
+             {
+                 arr3[i]="Grande";
+             }
+             if(size==3)
+             {
+                 arr3[i]="Venti";
+             }
+             else
+             {
+                arr3[i]="nothing inputed";
+             }
+         }
+          else if(cof== 2)
+         {
+             arr2[i]="Frappuccino";
+             size=parseInt(prompt("What size coffee would you like?\nPlease select\n1. For a Tail\n2. For a Grande\n3. For a Venti"));
+             if(size==1)
+             {
+                 arr3[i]="Tail";
+             }
+             if(size==2)
+             {
+                arr3[i]="Grande";
+             }
+             if(size==3)
+
+             {
+                arr3[i]="Venti";
+             }
+             else
+             {
+                arr3[i]="nothing inputed";
+             }
+         }
+          else if(cof== 3)
+         {
+             arr2[i]="Latte";
+             size=parseInt(prompt("What size coffee would you like?\nPlease select\n1. For a Tail\n2. For a Grande\n3. For a Venti"));
+             if(size==1)
+             {
+                arr3[i]="Tail";
+             }
+             if(size==2)
+             {
+                arr3[i]="Grande";
+             }
+             if(size==3)
+             {
+                arr3[i]="Venti";
+             }
+             else
+             {
+                arr3[i]="nothing inputed";
+             }
+         }
+         else
+         {
+             arr2[i]="wrong input";
+         }
+         }
+         document.write(`Welcome ${name} !`); 
+         document.write("<br>");
+         document.write("<br>");
+         document.write("Here is your daily schedule:");
+         document.write("<br>");
+         document.write("<br>");
+         for(let i =0;i<arr.length;i++)
+
+         {
+             document.write(`${arr[i] }: ${arr2[i]} , ${arr3[i]} `);
+             document.write("<br>");
+             document.write("<br>");
+         }
+    </script>
+</head>
+</html>
